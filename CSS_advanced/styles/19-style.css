@@ -156,7 +156,12 @@ ul.row {
 }
 .footer ul {
     text-align: right;
-} 
+}
+.row::after {
+    content: ''; /*genera como contenido vacio*/
+    display: table;
+    clear: both;
+}
 /* Sections 
     ========================================================================== */
 
